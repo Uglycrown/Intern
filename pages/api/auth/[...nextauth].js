@@ -10,9 +10,6 @@ export default NextAuth({
     // ...add more providers here
     
   ],  
-  secret:process.env.SECRET,
-
-  
 
   pages:{
       signIn: "/auth/signin",
@@ -28,4 +25,5 @@ export default NextAuth({
              return session;
          }
   },
+  secret:process.env.SECRET,
 })
